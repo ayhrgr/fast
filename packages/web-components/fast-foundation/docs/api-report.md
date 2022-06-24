@@ -1053,10 +1053,10 @@ export type DesignTokenValue<T> = StaticDesignTokenValue<T> | DerivedDesignToken
 
 // @public
 export const DI: Readonly<{
-    installAsContextRequestStrategy(): void;
+    installAsContextRequestStrategy(fallback?: () => DOMContainer): void;
     createContainer(config?: Partial<ContainerConfiguration>): Container;
-    findResponsibleContainer(target: EventTarget): DOMContainer;
-    findParentContainer(target: EventTarget): DOMContainer;
+    findResponsibleContainer(target: EventTarget, fallback?: () => DOMContainer): DOMContainer;
+    findParentContainer(target: EventTarget, fallback?: () => DOMContainer): DOMContainer;
     getOrCreateDOMContainer(target?: EventTarget, config?: Partial<Omit<ContainerConfiguration, "parentLocator">>): DOMContainer;
     getDependencies(Type: Constructable | Injectable): Key[];
     defineProperty(target: {}, propertyName: string, key: Key, respectConnection?: boolean): void;
