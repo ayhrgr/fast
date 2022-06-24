@@ -2999,8 +2999,8 @@ export type YearFormat = "2-digit" | "numeric";
 // Warnings were encountered during analysis:
 //
 // dist/dts/design-token/design-token.d.ts:91:5 - (ae-forgotten-export) The symbol "create" needs to be exported by the entry point index.d.ts
-// dist/dts/di/di.d.ts:446:5 - (ae-forgotten-export) The symbol "createContext" needs to be exported by the entry point index.d.ts
-// dist/dts/di/di.d.ts:512:5 - (ae-forgotten-export) The symbol "SingletonOptions" needs to be exported by the entry point index.d.ts
+// dist/dts/di/di.d.ts:449:5 - (ae-forgotten-export) The symbol "createContext" needs to be exported by the entry point index.d.ts
+// dist/dts/di/di.d.ts:515:5 - (ae-forgotten-export) The symbol "SingletonOptions" needs to be exported by the entry point index.d.ts
 
 // (No @packageDocumentation comment for this package)
 
